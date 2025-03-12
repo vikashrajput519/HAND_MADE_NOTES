@@ -1,0 +1,40 @@
+Android - 
+1. Imagemanagement for different screen size
+https://stackoverflow.com/questions/37207443/image-size-for-all-screen-devices#:~:text=Android%20Studio%20has%20a%20plugin,Repositories%2D%2D%3EClick%20install%20button.
+
+
+Activity Created:-
+oncreate()
+onStart()
+onResume()
+
+Activity Rotated:-
+onPause()
+onStop()
+onDestroy()
+onCreate()
+onStart()
+onResume()
+
+Finish:-
+onPause()
+onStop()
+onDestroy()
+
+
+===========
+Android command
+ ./gradlew build --stacktrace
+==============
+R24876713
+
+============================
+1. How to disable button in jsp
+<button type="button" class="btn btn-primary btn-sm" id="addMemberButton" ${chapter.chapterActions.canParticipate== 'true' ? '' : 'disabled'}>
+	Add Member
+</button>
+
+
+
+
+

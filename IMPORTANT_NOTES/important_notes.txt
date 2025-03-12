@@ -1,0 +1,28 @@
+composer global require laravel/installer
+1. laravel new example-app
+php artisan serve
+
+
+3,51,049.69 - 51,121.00 - 2,55,605.00
+
+46000 something was bil and you have paid 21 feb - 28000+ 22 feb ko 18000 something total 46000
+
+====================================
+1. Your refund for the order 405-2630145-3757926 of Rs.1125 has been processed successfully on 2/17/2025. - refended
+
+The Refund Reference Number for the transaction is _74766515048506749101750.
+--------------------------------------
+2. Order # 405-4022445-1150762
+
+Dear Customer,
+
+Your refund for the order 405-4022445-1150762 of Rs.1095.67 has been processed successfully on 2/14/2025.
+
+The Refund Reference Number for the transaction is _74766515045506629374850.
+
+=======================================================
+EMI Amount - 28200 only
+69.26+23087.61+346.3+4617.54+12.47+62.33 = 28195.51
+
+
+PHP - 78 - finished

@@ -1,0 +1,80 @@
+1. What is a system class?
+	It is a core class in Java. Since the class is final, we cannot override its behavior through inheritance. Neither can we instantiate this class since it doesn’t provide any public constructors. Hence, all of its methods are static.
+2. How to create daemon thread in Java?
+	We use the class setDaemon(true) to create this thread. We call this method before the start() method, else we get IllegalThreadStateException.
+3. State the methods used during deserialization and serialization process.
+	ObjectInputStream.readObject
+	Reads the file and deserializes the object.
+
+	ObjectOuputStream.writeObject
+	Serialize the object and write the serialized object to a file.
+4. What is the default value of the local variables?
+	
+5. What is Request Dispatcher?
+	In Servlet, RequestDispatcher acts as an interface for defining an object to receive requests from clients at one side and then dispatching it to particular resources on the other side (that may be a servlet, HTML, JSP). This RequestDispatcher has two methods in general: 
+	
+7. What is Bean in Spring and list the different scopes of Spring bean.	
+	Beans are one of the fundamental concepts of the Spring framework in managing structures efficiently. In a simple definition, Spring Bean represents the IoC containers that manage the object forming the backbone of applications.
+	1. Singleton – By default, Spring bean scope has a singleton scope that represents only one instance for Spring IOC container. This same object gets shared for each request.
+	2. Prototype – In this, a new instance will be called and created for every single bean definition, every time a request is made for a specific bean.
+	3. Request – In this scope, a single bean will be called and created for every HTTP request for that specific bean. 
+	4. Session – This scope defines the single bean use for a life cycle in a particular global HTTP session. 
+	5. Global-session – This scope allows a single bean for the particular life cycle for implementing in the global HTTP session.
+	
+	
+8. What is synchronisation?
+
+9. Can you please explain Explain the role of DispatcherServlet and ContextLoaderListener?
+	While configuring XML based Spring MVC configuration in web.xml file, two declarations of DispatcherServlet and ContextLoaderListener play an essential role in complementing the purpose of the framework.  
+
+	DispatcherServlet – 
+	DispatcherServlet has the primary purpose for managing incoming web requests for specific matching configured URI patterns. DispatcherServlet acts as the front controller for the core of the Spring MVC application and specifically loads the configuration file and then initialises the right beans present in that file. And when annotations are enabled, then it can also check and scan the configurations and packages for all annotated with @Repository, @Component, @Service, or @Controller. 
+
+	ContextLoaderListener – 
+	ContextLoaderListener here acts as the request listener for starting and shutting down root WebApplicationContext. So, it creates and shares the root application context with child contexts by the DispatcherServlet contexts. Applications can only use one entry for the ContextLoaderListener in the web.xml.
+10. What are the methods to override for you to use any object as a key in HashMap?
+	equals() and hashCode()
+
+11. How do you override the static method in Java? Does creating the same method in the subclass result in a compile-time error?
+
+12. What is the difference between synchronized and concurrent Collection in Java?
+
+13. What is the design pattern that Iterator uses?
+	It uses the iterator design pattern. Iterator design pattern enables the ability to sail through the collection of objects by using a standard interface abstracting the underlying implementation.
+	Enumeration is also an example of the Iterator design pattern.
+14. How do you fix a non-serializable member within a serializable class?
+	The object serialization process converts an object into a binary format that can then be sent, via the network, to any other running JVM. Attempts to serialize that class will fail with NotSerializableException.
+
+	If all fields in a class are serializable, simply add implements serializable to the class declaration. If not, you can repeat the process for that field’s class into the object graph. If there is a class that can’t, or shouldn’t, be made serializable, add the transient keyword to the field declaration. This tells the JVM to ignore the specified field when serializing.
+	
+15. How ConcurrentHashMap works in Java?
+
+16. What is CopyOnWriteArrayList in Java?
+
+
+===========
+18.  How do you remove all white spaces from a string in java?
+
+import java.util.Scanner;
+ 
+public class RemoveWhiteSpaces 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+         
+        System.out.println("Enter input string to be cleaned from white spaces...!");
+         
+        String inputString = sc.nextLine();
+         
+        String stringWithoutSpaces = inputString.replaceAll("\\s+", "");
+         
+        System.out.println("Input String : "+inputString);
+         
+        System.out.println("Input String Without Spaces : "+stringWithoutSpaces);
+         
+        sc.close();
+    }
+}
+
+20. Program for String palindrom
